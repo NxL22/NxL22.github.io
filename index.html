@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/imagenes/favicon.png" />
+    <title>Neil Portafolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos.css" />
+</head>
+
+<body>
+    <header>
+        <h3>✅ Neil Aular Perez</h3>
+    </header>
+    <section class="uno">
+        <div class="caja-central">
+            <div class="caja-cara">
+                <img class="cara" src="./assets/imagenes/yo.jpg" alt="Imagen de Neil" />
+            </div>
+            <div class="caja-presentacion">
+                <div>
+                    <h1><big>¡Hola!</big> 👋</h1>
+                    <p class="presentacion">
+                        Mi nombre es Neil, vivo en Santiago de Chile. Soy abogado y me he
+                        formado como desarrollador Full Stack Javascript en la Academia
+                        Desafío Latam. Actualmente, estoy en la etapa de Trainee y 
+                        en búsqueda de mi primer trabajo como programador.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="dos">
+        <h2>Sobre mí</h2>
+        <p class="texto-sobre-mi">
+            Desde septiembre de 2022 comencé mi viaje autodidacta en programación,
+            completando el curso de Desarrollador Full Stack Javascript en
+            septiembre de 2023. Desde entonces, mantengo mi pasión por la práctica y
+            el estudio diario para fortalecer y actualizar mis conocimientos.
+            Actualmente, estoy inmerso en el área de soporte técnico en una empresa
+            especializada en soluciones tecnológicas para corredores inmobiliarios,
+            donde continúo expandiendo mis habilidades y conocimientos en el mundo
+            de la tecnología.
+        </p>
+        <h2>Aptitudes</h2>
+        <p>
+            Estas son algunas de las tecnologías de las que tengo conocimientos.
+        </p>
+        <div class="aptitudes">
+            <div class="tech-list">
+                <img src="./assets/imagenes/HTML.png" class="tech" alt="HTML" />
+                <img src="./assets/imagenes/CSS.png" class="tech css" alt="CSS" />
+                <img src="./assets/imagenes/BOOTSTRAP.png" class="tech" alt="BOOTSTRAP" />
+                <img src="./assets/imagenes/JAVASCRIPT.png" class="tech" alt="JAVASCRIPT" />
+                <img src="./assets/imagenes/REACT.png" class="tech" alt="REACT" />
+                <img src="./assets/imagenes/PostgreSQL.png" class="tech" alt="POSTGRESQL" />
+                <img src="./assets/imagenes/NODEJS.png" class="tech" alt="NODEJS" />
+            </div>
+            <div class="Cursos-realizados">
+                <h2>Cursos realizados</h2>
+                <ul>
+                    <li>
+                        Desarrollador Full Stack Javascript, Academia Desafío Latam (2023).
+                    </li>
+                    <li>
+                        Curso de Corretaje de Propiedades, Learning Group (2022)
+                    </li>
+                </ul>
+            </div>
+    </section>
+    <section class="tres">
+        <h2>Mis Proyectos</h2>
+        <div class="proyectos">
+            <div class="card">
+                <h3>Proyecto de CoinShark 🦈</h3>
+                <img src="./assets/imagenes/CoinShark.png" alt="CoinShark" />
+                <p>Es un clon de CoinGecko muchisimo mas simple.</p>
+                <a href="https://github.com/NxL22/Desafio-react-API.git" target="_blank">Ver</a>
+            </div>
+
+
+        </div>
+    </section>
+    <footer>
+        <h2>Contactame</h2>
+        <div class="contacto">
+            <a href="https://www.linkedin.com/in/neil-aular/" target="_blank">
+                <img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" class="red-social"
+                    alt="linkedin" />
+            </a>
+            <hr />
+            <a href="https://instagram.com/better.call.neil/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png"
+                    class="red-social" alt="instagram" />
+            </a>
+            <hr />
+            <a href="https://github.com/NxL22" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="red-social" alt="GitHub" />
+            </a>
+        </div>
+        <p style="padding-top: 30px">
+            Neil Aular <big>&copy;</big> <span id="currentYear"></span>
+        </p>
+        <script src="date.js"></script>
+        <script>
+            const currentYear = new Date().getFullYear();
+            document.getElementById("currentYear").innerText = currentYear;
+        </script>
+    </footer>
+</body>
+
+</html>
