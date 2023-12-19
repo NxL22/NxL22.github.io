@@ -200,3 +200,53 @@ h2 {
     text-align: center;
 }
 
+
+
+/* Lokeando */
+
+.tech-list {
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    justify-content: center;
+    /* Centra el contenido horizontalmente */
+    align-items: center;
+    /* Centra el contenido verticalmente */
+
+}
+
+.grid-container img {
+    width: 68%;
+    display: block;
+    justify-self: center;
+    /* Centra horizontalmente */
+    align-self: center;
+    /* Centra verticalmente */
+    max-width: 100%;
+    /* Imagenes no excederán el ancho del contenedor */
+    height: auto;
+    /* Mantener la proporción al cambiar el ancho */
+
+}
+
+/* Estilos para la última fila centrada */
+.grid-container img:nth-child(7) {
+    grid-column: 2;
+    /* Ocupa todas las tres columnas */
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        /* Cambia a una sola columna */
+    }
+}
