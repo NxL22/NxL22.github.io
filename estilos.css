@@ -71,6 +71,7 @@ header {
     color: #303030;
     padding-left: 20%;
     padding-right: 20%;
+    padding-bottom: 5px;
 }
 
 /* Modificado el tamaño de las imágenes */
@@ -118,11 +119,16 @@ header {
 
 .card img {
     width: 100%;
+    height: auto;
+    max-width: 230px;
+    max-height: 266px;
 }
 
 .card a,
 footer a {
     color: white;
+    text-decoration: none;
+
 }
 
 .red-social {
@@ -204,6 +210,13 @@ h2 {
 
 /* Lokeando */
 
+
+.cursos-realizados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .tech-list {
     display: flex;
     justify-content: center;
@@ -220,7 +233,6 @@ h2 {
     /* Centra el contenido horizontalmente */
     align-items: center;
     /* Centra el contenido verticalmente */
-
 }
 
 .grid-container img {
@@ -232,7 +244,7 @@ h2 {
     /* Centra verticalmente */
     max-width: 100%;
     /* Imagenes no excederán el ancho del contenedor */
-    height: auto;
+    max-height: 150px;
     /* Mantener la proporción al cambiar el ancho */
 
 }
@@ -246,7 +258,15 @@ h2 {
 /* Media query para dispositivos móviles */
 @media (max-width: 600px) {
     .grid-container {
-        grid-template-columns: 1fr;
-        /* Cambia a una sola columna */
+        display: block; /* Cambia a un bloque para mostrar una imagen debajo de la otra */
+        text-align: center; /* Centra las imágenes */
+    }
+
+    .grid-container img {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        max-width: none; /* Elimina el límite máximo de ancho */
+        height: auto; /* Ajusta la altura automáticamente */
+        margin-bottom: 20px; /* Agrega un espacio entre las imágenes */
     }
 }
+
