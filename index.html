@@ -11,11 +11,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="estilos.css" />
+    <script src="./script/date.js" type="module"></script>
+    <script src="./script/showCV.js" type="module"></script>
 </head>
 
 <body>
     <header>
         <h3>✅ Neil Aular Perez</h3>
+        <button class="btn-cv" onclick="mostrarPDF()">👁️ Ver mi 📄</button>
     </header>
     <section class="uno">
         <div class="caja-central">
@@ -91,19 +94,25 @@
             <div class="card">
                 <h3>Proyecto de CoinShark 🦈</h3>
                 <img src="./assets/imagenes/CoinShark.jpeg" alt="CoinShark" />
-                <p>Es un clon de CoinGecko muchisimo más simple.</p>
-                <a href="https://github.com/NxL22/Desafio-react-API.git" target="_blank">Ver Código🔗</a>
+                <p class="texto-card">Clon muy simple de CoinGecko, empleando su API para obtener datos más
+                    esenciales de las criptomonedas.</p>
+                    <div class="ver-codigo">
+                <a href="https://github.com/NxL22/Desafio-react-API.git" target="_blank"><span class="texto-ver">Ver Código🔗</span></a>
+            </div>
             </div>
 
             <div class="card">
                 <h3>Proyecto de RetroPlay</h3>
                 <img src="./assets/imagenes/RetroPlay.jpeg" alt="CoinShark" />
-                <p>Es un Ecommerce donde apliqué todo lo aprendido en el curso, pero sin integrar una pasarela de pago</p>
-                <a href="https://github.com/NxL22/Prueba-final-Ecommerce-.git" target="_blank">Ver Código🔗</a>
+                <p class="texto-card">Es un Ecommerce donde apliqué todo lo aprendido en el curso, pero sin integrar una
+                    pasarela de pago.</p>
+                    <div class="ver-codigo">
+                <a href="https://github.com/NxL22/Prueba-final-Ecommerce-.git" target="_blank"><span class="texto-ver">Ver Código🔗</span></a>
             </div>
-
+            </div>
         </div>
     </section>
+
     <footer>
         <h2>Contactame</h2>
         <div class="contacto">
@@ -124,10 +133,15 @@
         <p style="padding-top: 30px">
             Neil Aular <big>&copy;</big> <span id="currentYear"></span>
         </p>
+
         <script src="date.js"></script>
         <script>
             const currentYear = new Date().getFullYear();
             document.getElementById("currentYear").innerText = currentYear;
+
+            function mostrarPDF() {
+                window.open('https://home.mycloud.com/action/share/aef0dc14-9f59-414c-83ea-db83a0af3956', '_blank');
+            }
         </script>
     </footer>
 </body>

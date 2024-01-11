@@ -4,12 +4,33 @@ body {
 }
 
 header {
+    display: flex;
     height: 65px;
     background-color: #000233;
     color: white;
     display: flex;
     align-items: center;
     padding-left: 25px;
+    justify-content: space-between;
+
+}
+
+.btn-cv {
+    background-color: #171848;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 25px;
+    /* Agrega márgenes para separación del borde */
+    margin-left: auto; /* Mueve el botón al extremo derecho */
+    transition: background-color 0.3s ease;
+}
+
+.btn-cv:hover {
+    background-color: #001c4a;
 }
 
 .cara {
@@ -56,9 +77,18 @@ header {
 }
 
 .presentacion,
-.texto-sobre-mi {
+.texto-sobre-mi,
+.texto-card {
     word-wrap: break-word;
-    text-wrap: pretty;
+    text-wrap: pretty; /* !Aún no funciona por lo que veo.*/
+    text-align: justify; /* Justifica el texto a la izquierda y derecha */
+    line-height: 1.4; /* Ajusta la altura de línea para mejorar la legibilidad */
+}
+
+.presentacion {
+    margin: 0; /* Elimina el margen predeterminado para evitar espacios no deseados */
+    max-width: 100%; /* Garantiza que el texto no sea más ancho que el contenedor */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
 }
 
 .dos {
@@ -72,6 +102,7 @@ header {
     padding-left: 20%;
     padding-right: 20%;
     padding-bottom: 5px;
+    min-height: calc(130vh - 65px);
 }
 
 /* Modificado el tamaño de las imágenes */
@@ -109,19 +140,30 @@ header {
 }
 
 .card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
     text-align: center;
     width: 30%;
     border: solid #f2f2f2 1px;
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 20px;
+    min-height: 30em;
 }
 
-.card img {
+.ver-codigo {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card > img {
     width: 100%;
     height: auto;
     max-width: 230px;
-    max-height: 266px;
+    max-height: 260px;
 }
 
 .card a,
