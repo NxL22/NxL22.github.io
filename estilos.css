@@ -8,24 +8,23 @@ header {
     height: 65px;
     background-color: #000233;
     color: white;
-    display: flex;
     align-items: center;
     padding-left: 25px;
     justify-content: space-between;
-
 }
 
 .btn-cv {
     background-color: #171848;
     color: white;
     border: none;
+    font-weight: 600;
+    max-height: 40px;
     padding: 10px 20px;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     margin-right: 25px;
-    /* Agrega márgenes para separación del borde */
-    margin-left: auto; /* Mueve el botón al extremo derecho */
+    margin-left: auto;
     transition: background-color 0.3s ease;
 }
 
@@ -56,6 +55,7 @@ header {
     border-radius: 20px;
     overflow: hidden;
     height: 50%;
+    box-shadow: 0 20px 36px rgba(0, 0, 0, 0.956);
 }
 
 .caja-cara {
@@ -63,7 +63,7 @@ header {
     justify-content: center;
     align-items: center;
     width: 40%;
-    background-color: #424242;
+    background-color: #424242;  
 }
 
 .caja-presentacion {
@@ -80,19 +80,21 @@ header {
 .texto-sobre-mi,
 .texto-card {
     word-wrap: break-word;
-    text-wrap: pretty; /* !Aún no funciona por lo que veo.*/
-    text-align: justify; /* Justifica el texto a la izquierda y derecha */
-    line-height: 1.4; /* Ajusta la altura de línea para mejorar la legibilidad */
+    text-wrap: pretty;
+    text-align: justify;
+    line-height: 1.4;
 }
 
 .presentacion {
-    margin: 0; /* Elimina el margen predeterminado para evitar espacios no deseados */
-    max-width: 100%; /* Garantiza que el texto no sea más ancho que el contenedor */
-    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    margin: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    word-spacing: -1px;
+    font-weight: 600;
 }
 
 .dos {
-    background-color: #f2f2f2;
+    background-color: #F5F5F5;
     height: 700px;
     display: flex;
     flex-direction: column;
@@ -103,9 +105,9 @@ header {
     padding-right: 20%;
     padding-bottom: 5px;
     min-height: calc(130vh - 65px);
+    font-weight: 700;
 }
 
-/* Modificado el tamaño de las imágenes */
 .aptitudes {
     width: 70%;
     margin-top: 20px;
@@ -117,7 +119,6 @@ header {
     padding-top: 8px;
 }
 
-/* Ajustado el tamaño de las imágenes */
 .tech {
     height: 64px;
 }
@@ -150,6 +151,12 @@ header {
     padding: 10px;
     margin-bottom: 20px;
     min-height: 30em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px) scale(1.05) rotateY(4deg);
+    box-shadow: 0 20px 36px rgba(0, 0, 0, 0.921);
 }
 
 .ver-codigo {
@@ -159,7 +166,7 @@ header {
     transform: translateX(-50%);
 }
 
-.card > img {
+.card>img {
     width: 100%;
     height: auto;
     max-width: 230px;
@@ -170,13 +177,10 @@ header {
 footer a {
     color: white;
     text-decoration: none;
-
 }
 
 .red-social {
-    height: 60px;
-    background-color: #f2f2f2;
-    border-radius: 10px;
+    max-height: 60px;
 }
 
 footer {
@@ -186,7 +190,11 @@ footer {
     justify-content: flex-start;
     align-items: center;
     color: #f2f2f2;
-    height: 250px;
+    max-height: 11.5em;
+}
+
+.texto-footer {
+    margin-top: 9px;
 }
 
 .contacto {
@@ -248,11 +256,6 @@ h2 {
     text-align: center;
 }
 
-
-
-/* Lokeando */
-
-
 .cursos-realizados {
     display: flex;
     justify-content: center;
@@ -262,9 +265,7 @@ h2 {
 .tech-list {
     display: flex;
     justify-content: center;
-    /* Centra horizontalmente */
     align-items: center;
-    /* Centra verticalmente */
 }
 
 .grid-container {
@@ -272,43 +273,56 @@ h2 {
     grid-template-columns: repeat(3, 1fr);
     gap: 8px;
     justify-content: center;
-    /* Centra el contenido horizontalmente */
     align-items: center;
-    /* Centra el contenido verticalmente */
 }
 
 .grid-container img {
     width: 68%;
     display: block;
     justify-self: center;
-    /* Centra horizontalmente */
     align-self: center;
-    /* Centra verticalmente */
     max-width: 100%;
-    /* Imagenes no excederán el ancho del contenedor */
     max-height: 150px;
-    /* Mantener la proporción al cambiar el ancho */
-
 }
 
-/* Estilos para la última fila centrada */
 .grid-container img:nth-child(7) {
     grid-column: 2;
-    /* Ocupa todas las tres columnas */
 }
+
+/* Agrega la animación de transición para un cambio suave */
+.icon-hola {
+    transition: transform 0.3s ease;
+}
+
+/* Aplica la transformación cuando se pasa el ratón por encima */
+.icon-hola:hover {
+    transform: translateY(-5px) rotate(-10deg);
+}
+
+/* Restaura la posición original al hacer clic */
+.icon-hola:active {
+    transform: translateY(0);
+}
+
+
 
 /* Media query para dispositivos móviles */
 @media (max-width: 600px) {
     .grid-container {
-        display: block; /* Cambia a un bloque para mostrar una imagen debajo de la otra */
-        text-align: center; /* Centra las imágenes */
+        display: block;
+        /* Cambia a un bloque para mostrar una imagen debajo de la otra */
+        text-align: center;
+        /* Centra las imágenes */
     }
 
     .grid-container img {
-        width: 100%; /* Ocupa todo el ancho disponible */
-        max-width: none; /* Elimina el límite máximo de ancho */
-        height: auto; /* Ajusta la altura automáticamente */
-        margin-bottom: 20px; /* Agrega un espacio entre las imágenes */
+        width: 100%;
+        /* Ocupa todo el ancho disponible */
+        max-width: none;
+        /* Elimina el límite máximo de ancho */
+        height: auto;
+        /* Ajusta la altura automáticamente */
+        margin-bottom: 20px;
+        /* Agrega un espacio entre las imágenes */
     }
 }
-
