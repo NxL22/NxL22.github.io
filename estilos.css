@@ -13,6 +13,10 @@ header {
     justify-content: space-between;
 }
 
+h1 {
+    position: relative;
+}
+
 .btn-cv {
     background-color: #171848;
     color: white;
@@ -63,7 +67,7 @@ header {
     justify-content: center;
     align-items: center;
     width: 40%;
-    background-color: #424242;  
+    background-color: #424242;
 }
 
 .caja-presentacion {
@@ -87,6 +91,7 @@ header {
 
 .presentacion {
     margin: 0;
+    margin-top: -4px;
     max-width: 100%;
     box-sizing: border-box;
     word-spacing: -1px;
@@ -108,6 +113,21 @@ header {
     font-weight: 700;
 }
 
+.dos h2,
+.dos ul,
+.dos li {
+    margin-bottom: -2px;
+}
+
+.dos li {
+    padding: 3px;
+}
+
+.h2-sobre-mi {
+    margin-top: -1em;
+    /* Ajusta este valor según sea necesario para subir el h2 */
+}
+
 .aptitudes {
     width: 70%;
     margin-top: 20px;
@@ -116,7 +136,7 @@ header {
 .tech-list {
     display: flex;
     justify-content: space-between;
-    padding-top: 8px;
+    padding: 8px;
 }
 
 .tech {
@@ -289,20 +309,37 @@ h2 {
     grid-column: 2;
 }
 
-        /* Define la animación */
-        @keyframes shake {
-            0% { transform: translateY(0) rotate(0); }
-            25% { transform: translateX(-4px) rotate(-20deg); }
-            50% { transform: translateX(3px) rotate(12deg); }
-            75% { transform: translateX(-4px) rotate(-10deg); }
-            100% { transform: translateY(0) rotate(0); }
-        }
+/* Aplica la animación a la clase icon-hola */
+.icon-hola {
+    display: inline-block;
+    animation: shake 3.5s infinite;
+    position: absolute;
+    top: -2px;
+    padding: 2px;
+}
 
-        /* Aplica la animación a la clase icon-hola */
-        .icon-hola {
-            display: inline-block;
-            animation: shake 3.5s infinite; 
-        }
+/* Define la animación */
+@keyframes shake {
+    0% {
+        transform: translateY(0) rotate(0);
+    }
+
+    25% {
+        transform: translateX(-4px) rotate(-20deg);
+    }
+
+    50% {
+        transform: translateX(5px) rotate(12deg);
+    }
+
+    75% {
+        transform: translateX(-3px) rotate(-10deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(0);
+    }
+}
 
 
 /* Media query para dispositivos móviles */
