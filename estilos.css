@@ -9,12 +9,19 @@ header {
     background-color: #000233;
     color: white;
     align-items: center;
-    padding-left: 25px;
+    padding-left: 3px;
     justify-content: space-between;
 }
 
 h1 {
     position: relative;
+}
+
+.gif-drake {
+    width: 44px;
+    /* Ajusta la anchura según tus preferencias */
+    height: 22px;
+    /* Ajusta la altura según tus preferencias */
 }
 
 .btn-cv {
@@ -33,7 +40,7 @@ h1 {
 }
 
 .btn-cv:hover {
-    background-color: #001c4a;
+    background-color: #0f63e8ef;
 }
 
 .cara {
@@ -100,7 +107,7 @@ h1 {
 
 .dos {
     background-color: #F5F5F5;
-    height: 700px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -143,6 +150,7 @@ h1 {
 .h2-sobre-mi {
     margin-top: -1em;
     /* Ajusta este valor según sea necesario para subir el h2 */
+    padding-top: 12px;
 }
 
 .aptitudes {
@@ -157,7 +165,7 @@ h1 {
 }
 
 .tech {
-    height: 64px;
+    height: 80px;
 }
 
 .tres {
@@ -183,17 +191,22 @@ h1 {
     flex-direction: column;
     text-align: center;
     width: 30%;
-    border: solid #f2f2f2 1px;
+    border: solid #ffffff 2px;
     border-radius: 10px;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-top: -12px;
     min-height: 30em;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 14px rgba(0, 0, 0, 0.886);
 }
 
 .card:hover {
     transform: translateY(-4px) scale(1.05) rotateY(4deg);
-    box-shadow: 0 20px 36px rgba(0, 0, 0, 0.921);
+    box-shadow: 0 20px 36px rgb(0, 0, 0);
+}
+
+.texto-ver:hover {
+    color: #0f63e8ef;
 }
 
 .ver-codigo {
@@ -238,55 +251,6 @@ footer {
     width: 30%;
     display: flex;
     justify-content: center;
-}
-
-@media (max-width: 1000px) {
-    .caja-central {
-        width: 90%;
-        height: 70%;
-        flex-direction: column;
-    }
-
-    .caja-cara {
-        width: 100%;
-        height: 50%;
-    }
-
-    .caja-presentacion {
-        width: 100%;
-        height: 50%;
-        align-items: flex-start;
-    }
-
-    .aptitudes {
-        width: 100%;
-        margin-top: 20px;
-    }
-
-    .dos {
-        height: auto;
-        padding: 40px 10px;
-    }
-
-    .tres {
-        height: auto;
-    }
-
-    .proyectos {
-        width: 90%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .card {
-        width: 80%;
-        margin-top: 20px;
-    }
-
-    .red-social {
-        margin: 0 10px 0 10px;
-    }
 }
 
 h2 {
@@ -360,22 +324,89 @@ h2 {
 
 
 /* Media query para dispositivos móviles */
-@media (max-width: 600px) {
+@media only screen and (max-width: 767px) {
     .grid-container {
         display: block;
-        /* Cambia a un bloque para mostrar una imagen debajo de la otra */
         text-align: center;
-        /* Centra las imágenes */
     }
 
     .grid-container img {
         width: 100%;
-        /* Ocupa todo el ancho disponible */
         max-width: none;
-        /* Elimina el límite máximo de ancho */
         height: auto;
-        /* Ajusta la altura automáticamente */
         margin-bottom: 20px;
-        /* Agrega un espacio entre las imágenes */
+    }
+
+    .dos li {   
+        white-space: unset;
+        margin-bottom: 10px; /* Añadido para separar elementos de la lista */
+    }
+
+    .dos .presentacion {
+        max-width: 100%;
+        padding: 0 10px; /* Añadido para un mejor espaciado en los lados */
+        box-sizing: border-box;
+    }
+
+    .dos .texto-sobre-mi {
+        word-wrap: break-word;
+    }
+
+    .presentacion p, .presentacion {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
+        margin: 0;
+        max-width: 100%; /* Añadido max-width para asegurar que ocupe el ancho disponible */
     }
 }
+
+@media only screen and (max-width: 1000px) {
+    .caja-central {
+        width: 90%;
+        height: 70%;
+        flex-direction: column;
+    }
+
+    .caja-cara {
+        width: 100%;
+        height: 50%;
+    }
+
+    .caja-presentacion {
+        width: 94%;
+        height: 50%;
+        align-items: flex-start;
+    }
+
+    .aptitudes {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .dos {
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .tres {
+        height: auto;
+    }
+
+    .proyectos {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .card {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .red-social {
+        margin: 0 10px 0 10px;
+    }
+}
+
