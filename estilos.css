@@ -121,6 +121,23 @@ h1 {
 
 .dos li {
     padding: 3px;
+    list-style: none;
+    margin-bottom: 4px;
+    position: relative;
+    white-space: nowrap;
+    /* Evita que el contenido de la lista se divida en varias líneas */
+}
+
+.cursos-realizados li::before {
+    content: "⭐";
+    /* Emoji como viñeta */
+    height: 26px;
+    /* Ajusta el tamaño del emoji según tus preferencias */
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    /* Ajusta la posición vertical al centro del texto */
+    transform: translateY(-50%);
 }
 
 .h2-sobre-mi {
