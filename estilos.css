@@ -289,21 +289,20 @@ h2 {
     grid-column: 2;
 }
 
-/* Agrega la animación de transición para un cambio suave */
-.icon-hola {
-    transition: transform 0.3s ease;
-}
+        /* Define la animación */
+        @keyframes shake {
+            0% { transform: translateY(0) rotate(0); }
+            25% { transform: translateX(-4px) rotate(-20deg); }
+            50% { transform: translateX(3px) rotate(12deg); }
+            75% { transform: translateX(-4px) rotate(-10deg); }
+            100% { transform: translateY(0) rotate(0); }
+        }
 
-/* Aplica la transformación cuando se pasa el ratón por encima */
-.icon-hola:hover {
-    transform: translateY(-5px) rotate(-10deg);
-}
-
-/* Restaura la posición original al hacer clic */
-.icon-hola:active {
-    transform: translateY(0);
-}
-
+        /* Aplica la animación a la clase icon-hola */
+        .icon-hola {
+            display: inline-block;
+            animation: shake 3.5s infinite; 
+        }
 
 
 /* Media query para dispositivos móviles */
