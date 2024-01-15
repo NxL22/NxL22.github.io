@@ -223,11 +223,12 @@ h1 {
 }
 
 .card > img {
-    width: 100%;
-    height: auto; /* marcada*/ 
-    max-width: 230px;
+    min-width: 200px;
+    max-width: 200px;
     max-height: 260px;
-    margin-left: 42px ;
+    min-height: 260px;
+    margin: 0 auto; /* la centro */
+    display: block; /* remuevo el espacio */
 }
 
 .card a,
@@ -306,6 +307,8 @@ h2 {
     padding: 2px;
 }
 
+
+
 /* Define la animación */
 @keyframes shake {
     0% {
@@ -346,7 +349,7 @@ h2 {
         width: 100%;
         max-width: none;
         height: auto;
-        margin-bottom: 20px;
+
     }
 
     .dos li {   
@@ -394,6 +397,7 @@ h2 {
 
     .caja-cara img {
         min-height: 16em;
+        margin-left: 14px;
     }
 
     .caja-presentacion {
