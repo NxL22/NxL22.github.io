@@ -88,7 +88,7 @@ h1 {
     width: 60%;
     background-color: #f2f2f2;
     color: #303030;
-    padding: 10px;
+    padding: 12px;
 }
 
 .presentacion,
@@ -120,7 +120,6 @@ h1 {
     padding-left: 20%;
     padding-right: 20%;
     padding-bottom: 2em;
-    min-height: calc(130vh - 184px);
     font-weight: 700;
 }
 
@@ -155,6 +154,7 @@ h1 {
     margin-top: -1em;
     /* Ajusta este valor según sea necesario para subir el h2 */
     padding-top: 30px;
+    padding-bottom: 18px;
 }
 
 .aptitudes {
@@ -174,7 +174,7 @@ h1 {
 
 .tres {
     background-color: #303030;
-    height: 39em;
+    height: 41em;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -183,11 +183,15 @@ h1 {
 }
 
 .proyectos {
-    width: 70%;
+    width: 75%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    column-gap: 8px;
+    column-gap: 10px;
+}
+
+.titulo-proyectos {
+    padding-bottom: 1em;
 }
 
 .card {
@@ -222,7 +226,7 @@ h1 {
     transform: translateX(-50%);
 }
 
-.card>img {
+.card > img {
     width: 200px;
     height: 260px;
     margin: 0 auto;
@@ -248,7 +252,7 @@ footer a {
 
 
 footer {
-    max-height: 35dvh;
+
     background-color: #424242;
     display: flex;
     flex-direction: column;
@@ -259,6 +263,7 @@ footer {
 
 .texto-footer {
     margin-top: 18px;
+    margin-bottom: 2px;
     font-size: large;
 }
 
@@ -268,9 +273,9 @@ footer {
     justify-content: center;
 }
 
-h2 {
+.titulo {
     text-align: center;
-    padding-bottom: 18px;
+    padding-bottom: 12px;
 }
 
 .cursos-realizados {
@@ -357,7 +362,7 @@ h2 {
         width: 100%;
         max-width: none;
         height: auto;
-
+        padding: 5px;
     }
 
     .dos li {
@@ -388,7 +393,7 @@ h2 {
     }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1300px) {
 
     .h2-sobre-mi {
         padding-bottom: 32px;
@@ -413,9 +418,10 @@ h2 {
     }
 
     .caja-presentacion {
-        width: 95%;
+        width: 97%;
         height: 50%;
         align-items: flex-start;
+        padding-right: 30px;
     }
 
     .aptitudes {
