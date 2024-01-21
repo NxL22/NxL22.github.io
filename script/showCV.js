@@ -1,4 +1,4 @@
 // Mostrar el CV
 function mostrarPDF() {
-    window.open('https://home.mycloud.com/action/share/fcfa4aa4-9399-42b2-afad-438cb9ed30e5', '_blank');
+    window.open('https://home.mycloud.com/action/share/c47ebfcd-e079-4c40-8b34-0595a6c8f67e', '_blank');
 }
