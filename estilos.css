@@ -21,15 +21,14 @@ h1 {
 
 .gif-drake {
     width: 44px;
-    /* Ajusta la anchura según tus preferencias */
     height: 22px;
-    /* Ajusta la altura según tus preferencias */
 }
 
 .btn-cv {
     background-color: #171848;
     color: white;
     border: none;
+    text-decoration: none;
     font-weight: 600;
     max-height: 40px;
     padding: 10px 20px;
