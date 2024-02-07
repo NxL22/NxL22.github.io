@@ -25,6 +25,6 @@
 <br/>
 
 
-[website]: https://souravdey777.github.io/Portfolio/
-[linkedin]: https://www.linkedin.com/in/sourav-dey/
-[medium]: https://medium.com/@Souravdey777/
+[website]: https://nxl22.github.io/
+[linkedin]: https://www.linkedin.com/in/neil-aular/
+
