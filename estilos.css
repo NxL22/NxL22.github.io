@@ -364,6 +364,10 @@ footer {
         margin-top: -220px;
     }
 
+    .texto-aptitudes {
+    padding: 0 10px;
+    }
+
     .grid-container {
         display: block;
         text-align: center;
