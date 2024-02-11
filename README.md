@@ -1,13 +1,10 @@
-### Hey Neil Aular here 👋
+### Hey :wink: Neil Aular here 👋
 
 ---
 
 <p align="center">
   <img src="" width="100%" title="Intro Card" alt="">
 </p>
-
-:wink:
-
 
 ### Tech & Tools Preference
 
