@@ -22,7 +22,6 @@ header {
 h1 {
     position: relative;
     margin-top: 2px;
-    border: 0;
 }
 
 .gif-drake {
@@ -33,7 +32,6 @@ h1 {
 .btn-cv {
     background-color: #171848;
     color: white;
-    border: none;
     text-decoration: none;
     font-weight: 600;
     max-height: 40px;
@@ -109,7 +107,6 @@ h1 {
     margin: 0;
     margin-top: -6px;
     max-width: 100%;
-    box-sizing: border-box;
     word-spacing: -1px;
     font-weight: 600;
 }
@@ -205,7 +202,7 @@ h1 {
     flex-direction: column;
     text-align: center;
     width: 30%;
-    border: solid #ffffff 2px;
+    outline: solid #ffffff 2px;
     border-radius: 10px;
     padding: 10px;
     margin-top: -12px;
@@ -391,7 +388,6 @@ footer {
         max-width: 100%;
         padding: 0 10px;
         /* Añadido para un mejor espaciado en los lados */
-        box-sizing: border-box;
     }
 
     .dos .texto-sobre-mi {
