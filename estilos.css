@@ -1,6 +1,7 @@
 html {
     box-sizing: border-box;
     scrollbar-color: #000233 #171848;
+    scrollbar-width: thin;
 }
 
 body {
