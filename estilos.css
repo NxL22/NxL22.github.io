@@ -12,7 +12,7 @@ body {
 header {
     display: flex;
     height: 65px;
-    background-color: #000233;
+    background-color: #000233f8;
     color: white;
     align-items: center;
     padding-left: 3px;
@@ -203,13 +203,14 @@ h1 {
     text-align: center;
     width: 30%;
     outline: solid #ffffff 2px;
+    background-color: #1e1e1eef;
     border-radius: 10px;
     padding: 10px;
     margin-top: -12px;
     min-height: 30em;
     word-break: normal;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 10px 14px rgba(0, 0, 0, 0.886);
+    box-shadow: 0 10px 14px rgba(0, 0, 0, 0.942);
 }
 
 .card:hover {
