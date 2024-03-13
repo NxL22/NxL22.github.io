@@ -32,8 +32,8 @@ h1 {
 .btn-cv {
     color: white;
     background:
-    linear-gradient(#09f, #0104bcf9) padding-box,
-    linear-gradient(#09f, #171848) border-box;
+        linear-gradient(#09f, #0104bcf9) padding-box,
+        linear-gradient(#09f, #171848) border-box;
     text-decoration: none;
     font-weight: 600;
     max-height: 40px;
@@ -45,9 +45,10 @@ h1 {
 }
 
 .btn-cv:hover {
-    background:linear-gradient(rgb(1, 37, 61), #1070e6f9) padding-box;
+    background: linear-gradient(rgb(1, 37, 61), #1070e6f9) padding-box;
     transition: background-color 0.3s ease;
 }
+
 
 .cara {
     border-radius: 50%;
@@ -206,8 +207,8 @@ h1 {
     width: 30%;
     outline: solid #09f 2px;
     background:
-    linear-gradient(black, #272626) padding-box,
-    linear-gradient(#09f, white) border-box;
+        linear-gradient(black, #272626) padding-box,
+        linear-gradient(#09f, white) border-box;
     border-radius: 10px;
     padding: 10px;
     margin-top: -12px;
@@ -233,7 +234,7 @@ h1 {
     transform: translateX(-50%);
 }
 
-.card > img {
+.card>img {
     width: 200px;
     height: 260px;
     margin: 0 auto;
@@ -254,8 +255,8 @@ footer a {
 }
 
 .red-social:hover {
-    filter: blur(1px); 
-    
+    filter: blur(1px);
+
 }
 
 
@@ -444,7 +445,7 @@ footer {
     }
 
     .texto-aptitudes {
-    padding: 0 10px;
+        padding: 0 10px;
     }
 
     .grid-container {
