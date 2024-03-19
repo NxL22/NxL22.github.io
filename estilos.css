@@ -99,7 +99,6 @@ h1 {
 .presentacion,
 .texto-sobre-mi,
 .texto-card {
-    text-indent: 20px;
     word-wrap: break-word;
     text-wrap: pretty;
     text-align: justify;
