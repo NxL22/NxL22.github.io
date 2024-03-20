@@ -12,14 +12,24 @@ body {
 header {
     display: flex;
     height: 65px;
-    background-color: #000233f8;
+    background-color: #000233d8;
     color: white;
     align-items: center;
     padding-left: 3px;
     justify-content: space-between;
+    /*loooo*/
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 h1 {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+h2 {
     position: relative;
     margin-top: 2px;
 }
@@ -430,10 +440,6 @@ footer {
 
 /* Media query para dispositivos móviles */
 @media only screen and (max-width: 767px) {
-
-    .h1 {
-        margin-top: -220px;
-    }
 
     .caja-central {
         width: 80%;
