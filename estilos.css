@@ -12,16 +12,25 @@ body {
 header {
     display: flex;
     height: 65px;
-    background-color: #000233d8;
+    background-color: #01011c;
     color: white;
     align-items: center;
-    padding-left: 3px;
     justify-content: space-between;
-    /*loooo*/
-    position: fixed;
+    position: sticky;
     top: 0;
-    width: 100%;
     z-index: 1;
+    animation: adjust-header linear both;
+    animation-timeline: scroll();
+    animation-range:0 100px;
+}
+
+@keyframes adjust-header {
+    to {
+    background: rgb(0, 0, 0, .3);
+    font-size: 12px;
+    height: 52px;
+    border-radius: 0;
+}
 }
 
 h1 {
