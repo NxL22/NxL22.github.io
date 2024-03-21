@@ -382,7 +382,7 @@ footer {
 
 
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1198px) {
 
     .h2-sobre-mi {
         padding-bottom: 32px;
@@ -439,7 +439,7 @@ footer {
 
     .card {
         margin-top: 20px;
-        width: 50%;
+        width: 45%;
     }
 
     .red-social {
