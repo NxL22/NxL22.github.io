@@ -17,6 +17,7 @@ header {
     color: white;
     align-items: center;
     justify-content: space-between;
+    user-select: none;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -85,6 +86,7 @@ h2 {
     justify-content: center;
     background-color: #303030;
     color: white;
+    user-select: none;
 }
 
 .caja-central {
@@ -145,6 +147,7 @@ h2 {
     padding-right: 20%;
     padding-bottom: 2em;
     font-weight: 700;
+    user-select: none;
 }
 
 .dos h2,
@@ -204,6 +207,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     color: #f2f2f2;
+    user-select: none;
 }
 
 .proyectos {
@@ -286,6 +290,7 @@ footer {
     justify-content: flex-start;
     align-items: center;
     color: #f2f2f2;
+    user-select: none;
 }
 
 .texto-footer {
