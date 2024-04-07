@@ -257,7 +257,7 @@ h2 {
     transform: translateX(-50%);
 }
 
-.card>img {
+.card > img {
     width: 200px;
     height: 260px;
     margin: 0 auto;
