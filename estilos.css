@@ -7,7 +7,7 @@ html {
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    background-color: #000000;
+    background-color: #0314ff;
 }
 
 header {
@@ -23,16 +23,16 @@ header {
     z-index: 1;
     animation: adjust-header linear both;
     animation-timeline: scroll();
-    animation-range:0 100px;
+    animation-range: 0 100px;
 }
 
 @keyframes adjust-header {
     to {
-    background: rgb(0, 0, 0, .3);
-    font-size: 12px;
-    height: 52px;
-    border-radius: 0;
-}
+        background: rgb(0, 0, 0, .3);
+        font-size: 12px;
+        height: 52px;
+        border-radius: 0;
+    }
 }
 
 h1 {
@@ -128,7 +128,7 @@ h2 {
 }
 
 .texto-card {
-padding-inline: 1em;
+    padding-inline: 1em;
 }
 
 .presentacion {
@@ -164,24 +164,19 @@ padding-inline: 1em;
     margin-bottom: 4px;
     position: relative;
     white-space: nowrap;
-    /* Evita que el contenido de la lista se divida en varias líneas */
 }
 
 .cursos-realizados li::before {
     content: "⭐";
-    /* Emoji como viñeta */
     height: 26px;
-    /* Ajusta el tamaño del emoji según tus preferencias */
     position: absolute;
     left: -20px;
     top: 50%;
-    /* Ajusta la posición vertical al centro del texto */
     transform: translateY(-50%);
 }
 
 .h2-sobre-mi {
     margin-top: -1em;
-    /* Ajusta este valor según sea necesario para subir el h2 */
     padding-top: 30px;
     padding-bottom: 18px;
 }
@@ -198,7 +193,7 @@ padding-inline: 1em;
 }
 
 .tech {
-    height: 80px;
+    height: 90px;
 }
 
 .tres {
@@ -230,7 +225,7 @@ padding-inline: 1em;
     position: relative;
     flex-direction: column;
     text-align: center;
-    width: 30%;
+    width: 29%;
     outline: solid #09f 2px;
     background:
         linear-gradient(black, #272626) padding-box,
@@ -238,14 +233,14 @@ padding-inline: 1em;
     border-radius: 10px;
     padding: 10px;
     margin-top: -12px;
-    min-height: 30em;
+    min-height: 31em;
     word-break: normal;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 10px 14px rgba(0, 0, 0, 0.974);
 }
 
 .card:hover {
-    transform: translateY(-4px) scale(1.05) rotateY(4deg);
+    transform: translateY(-4px) scale(1.02) rotateY(4deg);
     box-shadow: 0 20px 36px rgb(0, 0, 0);
 }
 
@@ -260,7 +255,7 @@ padding-inline: 1em;
     transform: translateX(-50%);
 }
 
-.card > img {
+.card>img {
     width: 200px;
     height: 260px;
     margin: 0 auto;
@@ -362,8 +357,6 @@ footer {
     top: -2px;
     padding: 2px;
 }
-
-
 
 /* Define la animación */
 @keyframes shake {
@@ -486,13 +479,11 @@ footer {
     .dos li {
         white-space: unset;
         margin-bottom: 10px;
-        /* Añadido para separar elementos de la lista */
     }
 
     .dos .presentacion {
         max-width: 100%;
         padding: 0 10px;
-        /* Añadido para un mejor espaciado en los lados */
     }
 
     .dos .texto-sobre-mi {
@@ -506,7 +497,6 @@ footer {
         margin: 0;
         padding-right: 1em;
         max-width: 100%;
-        /* Añadido max-width para asegurar que ocupe el ancho disponible */
         margin-bottom: 10px;
     }
 }
