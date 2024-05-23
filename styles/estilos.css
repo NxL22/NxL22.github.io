@@ -286,8 +286,8 @@ footer a {
 }
 
 .red-social {
-    max-height: 4em;
-    margin: 0 12px;
+    max-height: 3.3em;
+    margin: 0 8px;
     transition: all 0.4s ease;
     position: relative;
 }
@@ -382,14 +382,13 @@ footer {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
+    gap: 12px;
     justify-content: center;
     align-items: center;
 }
 
 .grid-container img {
-    width: 100%;
-    max-width: 80px; /* Ajusta este valor para cambiar el tamaño de las imágenes */
+    max-width: 10em;
     display: block;
     margin: 0 auto;
 }
