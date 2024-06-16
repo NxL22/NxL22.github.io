@@ -30,7 +30,7 @@ body {
 
 header {
     display: flex;
-    height: 65px;
+    height: 70px;
     background-color: var(--color-header-bg);
     color: var(--color-header-text);
     align-items: center;
@@ -48,7 +48,7 @@ header {
     to {
         background: var(--color-header-bg-adjusted);
         font-size: 12px;
-        height: 52px;
+        height: 60px;
         border-radius: 0;
     }
 }
@@ -184,7 +184,7 @@ h2 {
 }
 
 .cursos-realizados li::before {
-    content: "⭐";
+    content: '⭐';
     height: 26px;
     position: absolute;
     left: -20px;
@@ -393,7 +393,7 @@ footer {
 }
 
 .grid-container img {
-    max-width: 10em;
+    max-width: 8em;
     display: block;
     margin: 0 auto;
 }
@@ -498,6 +498,10 @@ footer {
 
     .grid-container img {
         max-width: 80px;
+    }
+
+    .grid-container img.bootstrap {
+        max-width: 105px; /* Ajusta el tamaño según sea necesario */
     }
 
     .red-social {
