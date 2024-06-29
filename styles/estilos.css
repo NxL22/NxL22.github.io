@@ -6,14 +6,15 @@
     --color-header-bg-adjusted: rgba(0, 0, 0, 0.3);
     --color-header-text: #f5f5f5;
     --color-main-text: #f2f2f2;
-    --color-secondary-bg: #303030;
-    --color-accent: #09f;
-    --color-accent-dark: #0104bcf9;
+    --color-secondary-bg: #1e2a38;
+    --color-accent: #0066cc;
+    --color-accent-dark: #004080;
     --color-card-bg: linear-gradient(rgb(0, 0, 0), #272626);
-    --color-card-border: linear-gradient(#09f, #f5f5f5);
-    --color-footer-bg: #424242;
-    --color-hover-card:#0f63e8ef;
+    --color-card-border: linear-gradient(#0066cc, #f5f5f5); 
+    --color-footer-bg: #2a3f54;
+    --color-hover-card:#0a4fbd;
 }
+
 
 html {
     box-sizing: border-box;
