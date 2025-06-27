@@ -63,12 +63,12 @@ h2 {
 	margin-top: 5px;
 }
 
-.gif-drake {
+.header__gif {
 	width: 44px;
 	height: 22px;
 }
 
-.btn-cv {
+.header__cv-btn {
 	color: var(--color-header-text);
 	background:
 		linear-gradient(var(--color-accent), var(--color-accent-dark)) padding-box,
@@ -83,19 +83,19 @@ h2 {
 	margin-left: auto;
 }
 
-.btn-cv:hover {
+.header__cv-btn:hover {
 	background: linear-gradient(rgb(1, 37, 61), #1070e6f9) padding-box;
 	transition: background-color 0.3s ease;
 }
 
-.cara {
+.intro__image {
 	border-radius: 50%;
 	height: 12em;
 	padding-top: 4em;
 	padding-bottom: 4em;
 }
 
-.uno {
+.intro {
 	padding-bottom: 9em;
 	width: 100%;
 	display: flex;
@@ -106,7 +106,7 @@ h2 {
 	user-select: none;
 }
 
-.caja-central {
+.intro__container {
 	margin-top: 10%;
 	width: 50%;
 	display: flex;
@@ -117,7 +117,7 @@ h2 {
 	box-shadow: 0 20px 36px rgba(0, 0, 0, 0.956);
 }
 
-.caja-cara {
+.intro__image-wrapper {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -125,7 +125,7 @@ h2 {
 	background-color: var(--color-footer-bg);
 }
 
-.caja-presentacion {
+.intro__presentation {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -135,20 +135,20 @@ h2 {
 	padding: 12px;
 }
 
-.presentacion,
-.texto-sobre-mi,
-.texto-card {
+.intro__text,
+.about__description,
+.projects__card-text {
 	word-wrap: break-word;
 	text-wrap: pretty;
 	text-align: start;
 	line-height: 1.4;
 }
 
-.texto-card {
+.projects__card-text {
 	padding-inline: 1em;
 }
 
-.presentacion {
+.intro__text {
 	margin: 0;
 	margin-top: -6px;
 	max-width: 100%;
@@ -156,7 +156,7 @@ h2 {
 	font-weight: 600;
 }
 
-.dos {
+.about {
 	background-color: var(--color-main-text);
 	height: auto;
 	display: flex;
@@ -169,13 +169,13 @@ h2 {
 	user-select: none;
 }
 
-.dos h2,
-.dos ul,
-.dos li {
+.about h2,
+.about ul,
+.about li {
 	margin-bottom: -18px;
 }
 
-.dos li {
+.about li {
 	padding: 3px;
 	list-style: none;
 	margin-bottom: 4px;
@@ -183,7 +183,7 @@ h2 {
 	white-space: nowrap;
 }
 
-.cursos-realizados li::before {
+.about__courses li::before {
 	content: '⭐';
 	height: 26px;
 	position: absolute;
@@ -192,18 +192,18 @@ h2 {
 	transform: translateY(-50%);
 }
 
-.h2-sobre-mi {
+.about__title {
 	margin-top: -1em;
 	padding-top: 30px;
 	padding-bottom: 18px;
 }
 
-.aptitudes {
+.about__skills {
 	width: 70%;
 	margin-top: 20px;
 }
 
-.tech-list {
+.about__tech-list {
 	display: flex;
 	justify-content: space-between;
 	padding: 16px;
@@ -211,11 +211,11 @@ h2 {
 	align-items: center;
 }
 
-.tech {
+.about__tech {
 	height: 90px;
 }
 
-.tres {
+.projects {
 	background-color: var(--color-secondary-bg);
 	height: 41em;
 	display: flex;
@@ -226,7 +226,7 @@ h2 {
 	user-select: none;
 }
 
-.proyectos {
+.projects__container {
 	width: 75%;
 	display: flex;
 	justify-content: space-between;
@@ -234,12 +234,12 @@ h2 {
 	column-gap: 10px;
 }
 
-.titulo-proyectos {
+.projects__title {
 	padding-bottom: 1em;
 	padding-top: 0.5em;
 }
 
-.card {
+.projects__card {
 	display: flex;
 	position: relative;
 	flex-direction: column;
@@ -257,47 +257,47 @@ h2 {
 	box-shadow: 0 10px 14px rgba(0, 0, 0, 0.974);
 }
 
-.card:hover {
+.projects__card:hover {
 	transform: translateY(-4px) scale(1.02) rotateY(4deg);
 	box-shadow: 0 20px 36px rgb(0, 0, 0);
 }
 
-.texto-ver:hover {
+.projects__code-text:hover {
 	color: var(--color-hover-card);
 }
 
-.ver-codigo {
+.projects__code-link {
 	position: absolute;
 	bottom: 10px;
 	left: 50%;
 	transform: translateX(-50%);
 }
 
-.card>img {
+.projects__card>img {
 	width: 200px;
 	height: 260px;
 	margin: 0 auto;
 	display: block;
 }
 
-.card a,
+.projects__card a,
 footer a {
 	color: var(--color-header-text);
 	text-decoration: none;
 }
 
-.red-social {
+.contact__icon {
 	max-height: 3.3em;
 	margin: 0 8px;
 	transition: all 0.4s ease;
 	position: relative;
 }
 
-.red-social.github {
+.contact__icon.contact__icon--github {
 	clip-path: circle(50%);
 }
 
-.red-social::before {
+.contact__icon::before {
 	content: '';
 	position: absolute;
 	top: 50%;
@@ -311,12 +311,12 @@ footer a {
 	z-index: -1;
 }
 
-.red-social:hover::before {
+.contact__icon:hover::before {
 	transform: translate(-50%, -50%) scale(1.5);
 	opacity: 0;
 }
 
-.red-social:hover {
+.contact__icon:hover {
 	animation: iconShake 0.5s ease forwards;
 	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
@@ -353,13 +353,13 @@ footer {
 	user-select: none;
 }
 
-.texto-footer {
+.contact__text {
 	margin-top: 18px;
 	margin-bottom: 4px;
 	font-size: large;
 }
 
-.copyright {
+.contact__copyright {
 	font-size: 1em;
 	vertical-align: 0.3em;
 	position: relative;
@@ -367,24 +367,24 @@ footer {
 	left: -0.2em;
 }
 
-.contacto {
+.contact__links {
 	width: 30%;
 	display: flex;
 	justify-content: center;
 }
 
-.titulo {
+.about__subtitle {
 	text-align: center;
 	padding-bottom: 12px;
 }
 
-.cursos-realizados {
+.about__courses {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.grid-container {
+.about__tech-grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 16px;
@@ -392,18 +392,18 @@ footer {
 	align-items: center;
 }
 
-.grid-container img {
+.about__tech-grid img {
 	max-width: 8em;
 	display: block;
 	margin: 0 auto;
 }
 
-.grid-container img:nth-child(7) {
+.about__tech-grid img:nth-child(7) {
 	grid-column: 2 / span 1;
 	justify-self: center;
 }
 
-.icon-hola {
+.intro__hello-icon {
 	display: inline-block;
 	animation: shake 3.5s infinite;
 	position: absolute;
@@ -434,119 +434,119 @@ footer {
 }
 
 @media only screen and (max-width: 1198px) {
-	.h2-sobre-mi {
+	.about__title {
 		padding-bottom: 32px;
 	}
 
-	.caja-central {
+	.intro__container {
 		height: 70%;
 		flex-direction: column;
 	}
 
-	.caja-cara {
+	.intro__image-wrapper {
 		width: 100%;
 		padding-top: 12px;
 		padding-bottom: 9px;
 	}
 
-	.caja-cara img {
+	.intro__image-wrapper img {
 		min-height: 16em;
 		margin-left: 14px;
 	}
 
-	.caja-presentacion {
+	.intro__presentation {
 		width: 94%;
 		height: 50%;
 		align-items: flex-start;
 		padding-right: 30px;
 	}
 
-	.aptitudes {
+	.about__skills {
 		width: 100%;
 		margin-top: 20px;
 	}
 
-	.uno {
+	.intro {
 		padding-bottom: 4em;
 	}
 
-	.dos {
+	.about {
 		height: auto;
 		padding: 20px 10px;
 	}
 
-	.tres {
+	.projects {
 		height: auto;
 		padding-bottom: 4em;
 	}
 
-	.proyectos {
+	.projects__container {
 		width: 90%;
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-between;
 	}
 
-	.card {
+	.projects__card {
 		margin-top: 20px;
 		width: 18em;
 	}
 
-	.red-social {
+	.contact__icon {
 		margin: 0 10px 0 10px;
 	}
 
-	.grid-container img {
+	.about__tech-grid img {
 		max-width: 80px;
 	}
 
-	.grid-container img.bootstrap {
+	.about__tech-grid img.about__tech--bootstrap {
 		max-width: 105px;
 	}
 
-	.red-social {
+	.contact__icon {
 		margin: 0 2em;
 	}
 
 }
 
 @media only screen and (max-width: 767px) {
-	.caja-central {
+	.intro__container {
 		width: 80%;
 	}
 
-	.card {
+	.projects__card {
 		width: 18em;
 	}
 
-	.texto-aptitudes {
+	.about__skills-text {
 		padding: 0 10px;
 	}
 
-	.grid-container {
+	.about__tech-grid {
 		grid-template-columns: repeat(3, 1fr);
 	}
 
-	.grid-container img {
+	.about__tech-grid img {
 		max-width: 80px;
 	}
 
-	.dos li {
+	.about li {
 		white-space: unset;
 		margin-bottom: 10px;
 	}
 
-	.dos .presentacion {
+	.about .intro__text {
 		max-width: 100%;
 		padding: 0 10px;
 	}
 
-	.dos .texto-sobre-mi {
+	.about .about__description {
 		word-wrap: break-word;
 	}
 
-	.presentacion p,
-	.presentacion {
+	.about__presentation p,
+	.intro__text {
 		overflow-wrap: break-word;
 		white-space: normal;
 		margin: 0;
