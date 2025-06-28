@@ -63,12 +63,12 @@ h2 {
 	margin-top: 5px;
 }
 
-.header__gif {
+.gif-drake {
 	width: 44px;
 	height: 22px;
 }
 
-.header__cv-btn {
+.btn-cv {
 	color: var(--color-header-text);
 	background:
 		linear-gradient(var(--color-accent), var(--color-accent-dark)) padding-box,
@@ -83,19 +83,19 @@ h2 {
 	margin-left: auto;
 }
 
-.header__cv-btn:hover {
+.btn-cv:hover {
 	background: linear-gradient(rgb(1, 37, 61), #1070e6f9) padding-box;
 	transition: background-color 0.3s ease;
 }
 
-.intro__image {
+.cara {
 	border-radius: 50%;
 	height: 12em;
 	padding-top: 4em;
 	padding-bottom: 4em;
 }
 
-.intro {
+.uno {
 	padding-bottom: 9em;
 	width: 100%;
 	display: flex;
@@ -106,7 +106,7 @@ h2 {
 	user-select: none;
 }
 
-.intro__container {
+.caja-central {
 	margin-top: 10%;
 	width: 50%;
 	display: flex;
@@ -117,7 +117,7 @@ h2 {
 	box-shadow: 0 20px 36px rgba(0, 0, 0, 0.956);
 }
 
-.intro__image-wrapper {
+.caja-cara {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -125,7 +125,7 @@ h2 {
 	background-color: var(--color-footer-bg);
 }
 
-.intro__presentation {
+.caja-presentacion {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -135,20 +135,20 @@ h2 {
 	padding: 12px;
 }
 
-.intro__text,
-.about__description,
-.projects__card-text {
+.presentacion,
+.texto-sobre-mi,
+.texto-card {
 	word-wrap: break-word;
 	text-wrap: pretty;
 	text-align: start;
 	line-height: 1.4;
 }
 
-.projects__card-text {
+.texto-card {
 	padding-inline: 1em;
 }
 
-.intro__text {
+.presentacion {
 	margin: 0;
 	margin-top: -6px;
 	max-width: 100%;
@@ -156,7 +156,7 @@ h2 {
 	font-weight: 600;
 }
 
-.about {
+.dos {
 	background-color: var(--color-main-text);
 	height: auto;
 	display: flex;
@@ -169,13 +169,13 @@ h2 {
 	user-select: none;
 }
 
-.about h2,
-.about ul,
-.about li {
+.dos h2,
+.dos ul,
+.dos li {
 	margin-bottom: -18px;
 }
 
-.about li {
+.dos li {
 	padding: 3px;
 	list-style: none;
 	margin-bottom: 4px;
@@ -183,7 +183,7 @@ h2 {
 	white-space: nowrap;
 }
 
-.about__courses li::before {
+.cursos-realizados li::before {
 	content: '⭐';
 	height: 26px;
 	position: absolute;
@@ -192,18 +192,18 @@ h2 {
 	transform: translateY(-50%);
 }
 
-.about__title {
+.h2-sobre-mi {
 	margin-top: -1em;
 	padding-top: 30px;
 	padding-bottom: 18px;
 }
 
-.about__skills {
+.aptitudes {
 	width: 70%;
 	margin-top: 20px;
 }
 
-.about__tech-list {
+.tech-list {
 	display: flex;
 	justify-content: space-between;
 	padding: 16px;
@@ -211,11 +211,11 @@ h2 {
 	align-items: center;
 }
 
-.about__tech {
+.tech {
 	height: 90px;
 }
 
-.projects {
+.tres {
 	background-color: var(--color-secondary-bg);
 	height: 41em;
 	display: flex;
@@ -226,7 +226,7 @@ h2 {
 	user-select: none;
 }
 
-.projects__container {
+.proyectos {
 	width: 75%;
 	display: flex;
 	justify-content: space-between;
@@ -234,12 +234,12 @@ h2 {
 	column-gap: 10px;
 }
 
-.projects__title {
+.titulo-proyectos {
 	padding-bottom: 1em;
 	padding-top: 0.5em;
 }
 
-.projects__card {
+.card {
 	display: flex;
 	position: relative;
 	flex-direction: column;
@@ -257,47 +257,47 @@ h2 {
 	box-shadow: 0 10px 14px rgba(0, 0, 0, 0.974);
 }
 
-.projects__card:hover {
+.card:hover {
 	transform: translateY(-4px) scale(1.02) rotateY(4deg);
 	box-shadow: 0 20px 36px rgb(0, 0, 0);
 }
 
-.projects__code-text:hover {
+.texto-ver:hover {
 	color: var(--color-hover-card);
 }
 
-.projects__code-link {
+.ver-codigo {
 	position: absolute;
 	bottom: 10px;
 	left: 50%;
 	transform: translateX(-50%);
 }
 
-.projects__card>img {
+.card>img {
 	width: 200px;
 	height: 260px;
 	margin: 0 auto;
 	display: block;
 }
 
-.projects__card a,
+.card a,
 footer a {
 	color: var(--color-header-text);
 	text-decoration: none;
 }
 
-.contact__icon {
+.red-social {
 	max-height: 3.3em;
 	margin: 0 8px;
 	transition: all 0.4s ease;
 	position: relative;
 }
 
-.contact__icon.contact__icon--github {
+.red-social.github {
 	clip-path: circle(50%);
 }
 
-.contact__icon::before {
+.red-social::before {
 	content: '';
 	position: absolute;
 	top: 50%;
@@ -311,12 +311,12 @@ footer a {
 	z-index: -1;
 }
 
-.contact__icon:hover::before {
+.red-social:hover::before {
 	transform: translate(-50%, -50%) scale(1.5);
 	opacity: 0;
 }
 
-.contact__icon:hover {
+.red-social:hover {
 	animation: iconShake 0.5s ease forwards;
 	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
@@ -353,13 +353,13 @@ footer {
 	user-select: none;
 }
 
-.contact__text {
+.texto-footer {
 	margin-top: 18px;
 	margin-bottom: 4px;
 	font-size: large;
 }
 
-.contact__copyright {
+.copyright {
 	font-size: 1em;
 	vertical-align: 0.3em;
 	position: relative;
@@ -367,24 +367,24 @@ footer {
 	left: -0.2em;
 }
 
-.contact__links {
+.contacto {
 	width: 30%;
 	display: flex;
 	justify-content: center;
 }
 
-.about__subtitle {
+.titulo {
 	text-align: center;
 	padding-bottom: 12px;
 }
 
-.about__courses {
+.cursos-realizados {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.about__tech-grid {
+.grid-container {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 16px;
@@ -392,18 +392,18 @@ footer {
 	align-items: center;
 }
 
-.about__tech-grid img {
+.grid-container img {
 	max-width: 8em;
 	display: block;
 	margin: 0 auto;
 }
 
-.about__tech-grid img:nth-child(7) {
+.grid-container img:nth-child(7) {
 	grid-column: 2 / span 1;
 	justify-self: center;
 }
 
-.intro__hello-icon {
+.icon-hola {
 	display: inline-block;
 	animation: shake 3.5s infinite;
 	position: absolute;
@@ -434,119 +434,119 @@ footer {
 }
 
 @media only screen and (max-width: 1198px) {
-	.about__title {
+	.h2-sobre-mi {
 		padding-bottom: 32px;
 	}
 
-	.intro__container {
+	.caja-central {
 		height: 70%;
 		flex-direction: column;
 	}
 
-	.intro__image-wrapper {
+	.caja-cara {
 		width: 100%;
 		padding-top: 12px;
 		padding-bottom: 9px;
 	}
 
-	.intro__image-wrapper img {
+	.caja-cara img {
 		min-height: 16em;
 		margin-left: 14px;
 	}
 
-	.intro__presentation {
+	.caja-presentacion {
 		width: 94%;
 		height: 50%;
 		align-items: flex-start;
 		padding-right: 30px;
 	}
 
-	.about__skills {
+	.aptitudes {
 		width: 100%;
 		margin-top: 20px;
 	}
 
-	.intro {
+	.uno {
 		padding-bottom: 4em;
 	}
 
-	.about {
+	.dos {
 		height: auto;
 		padding: 20px 10px;
 	}
 
-	.projects {
+	.tres {
 		height: auto;
 		padding-bottom: 4em;
 	}
 
-	.projects__container {
+	.proyectos {
 		width: 90%;
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-between;
 	}
 
-	.projects__card {
+	.card {
 		margin-top: 20px;
 		width: 18em;
 	}
 
-	.contact__icon {
+	.red-social {
 		margin: 0 10px 0 10px;
 	}
 
-	.about__tech-grid img {
+	.grid-container img {
 		max-width: 80px;
 	}
 
-	.about__tech-grid img.about__tech--bootstrap {
+	.grid-container img.bootstrap {
 		max-width: 105px;
 	}
 
-	.contact__icon {
+	.red-social {
 		margin: 0 2em;
 	}
 
 }
 
 @media only screen and (max-width: 767px) {
-	.intro__container {
+	.caja-central {
 		width: 80%;
 	}
 
-	.projects__card {
+	.card {
 		width: 18em;
 	}
 
-	.about__skills-text {
+	.texto-aptitudes {
 		padding: 0 10px;
 	}
 
-	.about__tech-grid {
+	.grid-container {
 		grid-template-columns: repeat(3, 1fr);
 	}
 
-	.about__tech-grid img {
+	.grid-container img {
 		max-width: 80px;
 	}
 
-	.about li {
+	.dos li {
 		white-space: unset;
 		margin-bottom: 10px;
 	}
 
-	.about .intro__text {
+	.dos .presentacion {
 		max-width: 100%;
 		padding: 0 10px;
 	}
 
-	.about .about__description {
+	.dos .texto-sobre-mi {
 		word-wrap: break-word;
 	}
 
-	.about__presentation p,
-	.intro__text {
+	.presentacion p,
+	.presentacion {
 		overflow-wrap: break-word;
 		white-space: normal;
 		margin: 0;
